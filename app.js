@@ -1,9 +1,11 @@
 const DATA = {
+
   brand: "Viraj Agro Products",
 
   product: "Viraj SoilTech Rotavator",
 
-  tagline: "Strong design. Clear guarantee. Farmer-focused.",
+  tagline:
+    "Strong design. Clear guarantee. Farmer-focused.",
 
   contacts: [
     "9011773275",
@@ -11,88 +13,186 @@ const DATA = {
     "9011773262"
   ],
 
+  heroImage:
+    "assets/VVKL7416.JPG",
+
   features: [
+
     {
+      id: "blade",
       icon: "6",
-      title: "Corner blade arrangement",
-      short: "Full-width tillage focus",
+      category: "Blade",
+      title: "Corner Blade Arrangement",
+
+      short:
+        "Full-width tillage focus.",
+
       detail:
         "The supplied Viraj sales material highlights a 6-blade arrangement at the corner to target more uniform full-width tillage and reduce unnecessary repeat work.",
-      section: "Blade"
+
+      image:
+        "assets/VVKL7454.JPG"
     },
 
     {
+      id: "direction",
       icon: "↗",
-      title: "Outer-facing corner blade",
-      short: "Residue handling focus",
+      category: "Blade",
+      title: "Outer-Facing Corner Blade",
+
+      short:
+        "Residue handling focus.",
+
       detail:
         "The supplied sales material positions the outer-facing corner blade design as a way to reduce residue, rope, cloth and straw sticking around the side.",
-      section: "Blade"
+
+      image:
+        "assets/VVKL7455.JPG"
     },
 
     {
+      id: "gearbox",
       icon: "21",
-      title: "Side gearbox support",
-      short: "21-number lock nut-bolts",
+      category: "Gearbox",
+      title: "Side Gearbox Support",
+
+      short:
+        "21-number lock nut-bolts.",
+
       detail:
         "The supplied script specifies 21-number high-tension lock nut-bolts, 6 support bolts and an outer check nut.",
-      section: "Gearbox"
+
+      image:
+        "assets/VVKL7473.JPG"
     },
 
     {
+      id: "springs",
       icon: "4",
-      title: "Four-spring support",
-      short: "Rear support",
+      category: "Construction",
+      title: "Four-Spring Support",
+
+      short:
+        "Rear support system.",
+
       detail:
-        "The supplied product material highlights four spring supports instead of two.",
-      section: "Construction"
+        "The supplied material highlights four spring supports instead of two.",
+
+      image:
+        "assets/VVKL7438.JPG"
     },
 
     {
+      id: "structure",
       icon: "▣",
-      title: "Heavy structure",
-      short: "Body and base plate",
+      category: "Construction",
+      title: "Heavy Structure",
+
+      short:
+        "Body, base plate and clamps.",
+
       detail:
         "The supplied material highlights heavy body construction, a thicker base plate and double-clamp support.",
-      section: "Construction"
+
+      image:
+        "assets/VVKL7438.JPG"
     },
 
     {
+      id: "guarantee",
       icon: "✓",
-      title: "Written guarantee",
-      short: "Clear terms",
+      category: "Guarantee",
+      title: "Written Guarantee",
+
+      short:
+        "Clear terms for the customer.",
+
       detail:
         "The supplied material emphasizes written guarantee terms and piece-to-piece replacement where applicable.",
-      section: "Guarantee"
+
+      image:
+        "assets/VVKL7417.JPG"
     }
+
   ],
 
-  salesSteps: [
-    "Ask the farmer about problems with the current rotavator.",
-    "Open the relevant feature card.",
-    "Show that component physically on the machine.",
-    "Use Compare for a quick side-by-side explanation.",
+  comparison: [
+
+    {
+      point: "Corner blade",
+      market:
+        "Supplied script describes many market rotavators with 6 blades at center and fewer at corner.",
+      viraj:
+        "6-blade corner arrangement highlighted."
+    },
+
+    {
+      point: "Corner direction",
+      market:
+        "Supplied script states inward-facing corner blades may allow residue to collect.",
+      viraj:
+        "Outer-facing corner blade design highlighted."
+    },
+
+    {
+      point: "Gearbox support",
+      market:
+        "5 × 17-number support bolts mentioned in the supplied script.",
+      viraj:
+        "6 × 21-number high-tension lock nut-bolts + outer check nut mentioned."
+    },
+
+    {
+      point: "Rear springs",
+      market:
+        "2 springs mentioned in the supplied script.",
+      viraj:
+        "4 springs highlighted."
+    },
+
+    {
+      point: "Guarantee",
+      market:
+        "Verbal/unclear warranty is described as a customer pain point.",
+      viraj:
+        "Written guarantee terms highlighted."
+    }
+
+  ],
+
+  salesFlow: [
+
+    "Ask about the farmer's current rotavator.",
+
+    "Open the relevant feature.",
+
+    "Show the same component physically.",
+
+    "Use Compare for quick explanation.",
+
     "Show the written guarantee.",
-    "Ask tractor HP, soil type and required working width.",
+
+    "Ask tractor HP and soil type.",
+
+    "Confirm required working width.",
+
     "Discuss size and price last."
+
   ]
+
 };
 
 
-/* -------------------------
-   COMMON UI
-------------------------- */
+/* --------------------------------
+   MACHINE PLACEHOLDER
+-------------------------------- */
 
-function icon(text) {
-  return `<div class="icon">${text}</div>`;
-}
+function machineGraphic() {
 
-
-function machineSvg() {
   return `
+
   <svg
     viewBox="0 0 720 360"
-    role="img"
     aria-label="Rotavator illustration">
 
     <g
@@ -103,36 +203,36 @@ function machineSvg() {
       <path
         d="M115 122h470l38 86H77z"
         fill="#d8532b"
-        stroke="#7b3324"
+        stroke="#703020"
         stroke-width="12"/>
 
       <path
         d="M150 122l45-60h310l45 60"
-        fill="#e76535"
-        stroke="#7b3324"
+        fill="#e86b38"
+        stroke="#703020"
         stroke-width="12"/>
 
       <path
         d="M190 62h270M165 95h390"
-        stroke="#7b3324"
+        stroke="#703020"
         stroke-width="10"/>
 
       <path
         d="M95 208h530"
-        stroke="#6d3323"
+        stroke="#673021"
         stroke-width="13"/>
 
       <path
         d="
-          M118 222l-13 68
-          M175 222l-7 68
-          M235 222l3 68
-          M295 222l9 68
-          M355 222l12 68
-          M415 222l10 68
-          M475 222l4 68
-          M535 222l-8 68"
-        stroke="#26332d"
+        M118 222l-13 68
+        M175 222l-7 68
+        M235 222l3 68
+        M295 222l9 68
+        M355 222l12 68
+        M415 222l10 68
+        M475 222l4 68
+        M535 222l-8 68"
+        stroke="#26342e"
         stroke-width="11"/>
 
       <circle
@@ -151,7 +251,7 @@ function machineSvg() {
 
       <path
         d="M330 62V30M330 30h115M445 30v34"
-        stroke="#2d4339"
+        stroke="#2d463b"
         stroke-width="11"/>
     </g>
 
@@ -159,64 +259,106 @@ function machineSvg() {
       <circle cx="118" cy="296" r="9"/>
       <circle cx="565" cy="296" r="9"/>
     </g>
+
   </svg>
+
   `;
 }
 
 
-/* -------------------------
-   LAYOUT
-------------------------- */
+/* --------------------------------
+   NAVIGATION
+-------------------------------- */
 
-function navigation(active) {
+const NAV_ITEMS = [
 
-  const items = [
-    ["home", "Dashboard"],
-    ["why", "Why SoilTech"],
-    ["features", "Features"],
-    ["compare", "Compare"],
-    ["product", "Product View"],
-    ["sales", "Salesman Mode"]
-  ];
+  ["home", "Dashboard"],
 
-  return items
+  ["why", "Why SoilTech"],
+
+  ["features", "Features"],
+
+  ["compare", "Compare"],
+
+  ["product", "Product View"],
+
+  ["sales", "Salesman Mode"]
+
+];
+
+
+function nav(active) {
+
+  return NAV_ITEMS
     .map(([id, label]) => `
+
       <button
-        class="${active === id ? "active" : ""}"
-        onclick="navigate('${id}')">
+        class="nav-button ${active === id ? "active" : ""}"
+        onclick="go('${id}')">
+
         ${label}
+
       </button>
+
     `)
     .join("");
+
 }
 
 
-function shell(content, active, title, subtitle) {
+/* --------------------------------
+   SHELL
+-------------------------------- */
+
+function shell(
+  content,
+  active,
+  title,
+  subtitle
+) {
 
   return `
+
   <div class="shell">
 
     <aside class="sidebar">
 
       <div class="brand">
-        <div class="brand-mark">V</div>
 
-        <div>
-          <strong>VIRAJ</strong>
-          <small>SoilTech Product Advisor</small>
+        <div class="brand-mark">
+          V
         </div>
+
+        <div class="brand-text">
+
+          <strong>VIRAJ</strong>
+
+          <span>
+            SoilTech Product Advisor
+          </span>
+
+        </div>
+
       </div>
 
+
       <nav class="nav">
-        ${navigation(active)}
+
+        ${nav(active)}
+
       </nav>
 
-      <div class="sidebar-note">
-        Tablet-first sales demo.
-        Product specifications and comparison claims
-        are based on the sales material supplied for
-        this project and should be approved by Viraj
-        before public deployment.
+
+      <div class="sidebar-bottom">
+
+        Designed as a tablet-first
+        customer presentation tool.
+
+        Product specifications and
+        comparison claims should be
+        approved by Viraj before
+        public deployment.
+
       </div>
 
     </aside>
@@ -226,121 +368,410 @@ function shell(content, active, title, subtitle) {
 
       <div class="topbar">
 
-        <div class="title">
-          <h1>${title}</h1>
-          <p>${subtitle}</p>
+        <div class="title-area">
+
+          <h1>
+            ${title}
+          </h1>
+
+          <p>
+            ${subtitle}
+          </p>
+
         </div>
 
+
         <input
-          id="search"
-          class="search"
+          class="search-box"
           placeholder="Search features..."
           oninput="searchCards(this.value)"
         />
 
       </div>
 
+
       ${content}
 
-      <footer>
-        Viraj SoilTech Product Advisor • Demo build v1
-      </footer>
+
+      <div class="contact-card">
+
+        <div>
+
+          <h3>
+            ${DATA.brand}
+          </h3>
+
+          <p>
+            Demo • Written Guarantee •
+            Product Explanation • Local Support
+          </p>
+
+        </div>
+
+
+        <div class="numbers">
+
+          ${DATA.contacts
+            .map(
+              number =>
+                `<span class="number">${number}</span>`
+            )
+            .join("")}
+
+        </div>
+
+      </div>
 
     </main>
 
   </div>
+
   `;
+
 }
 
 
-/* -------------------------
+/* --------------------------------
    DASHBOARD
-------------------------- */
+-------------------------------- */
 
 function home() {
 
-  const cards = DATA.features
-    .map(feature => `
-      <div class="card searchable">
+  return shell(
 
-        <div class="feature">
+    `
 
-          ${icon(feature.icon)}
+    <section class="hero">
 
-          <div>
+      <div class="hero-content">
 
-            <span class="badge">
-              ${feature.section}
-            </span>
+        <div class="eyebrow">
+          Agricultural Machinery • Rotavator
+        </div>
 
-            <h4>
-              ${feature.title}
-            </h4>
 
-            <p>
-              ${feature.short}
-            </p>
+        <h2>
+          A smarter way to
+          explain SoilTech.
+        </h2>
 
-            <button
-              class="btn soft"
-              style="margin-top:12px"
-              onclick="showFeature('${escapeText(feature.title)}')">
-              View detail
-            </button>
+
+        <p class="hero-description">
+
+          Help the customer understand
+          the blade system, gearbox,
+          construction and guarantee
+          visually before discussing price.
+
+        </p>
+
+
+        <div class="actions">
+
+          <button
+            class="btn btn-primary"
+            onclick="go('why')">
+
+            Start Customer Demo →
+
+          </button>
+
+
+          <button
+            class="btn btn-light"
+            onclick="go('compare')">
+
+            Compare
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-product">
+
+        <img
+          src="${DATA.heroImage}"
+          alt="Viraj SoilTech Rotavator"
+
+          onerror="
+            this.style.display='none';
+            this.parentElement.innerHTML +=
+            '${machineGraphic()
+              .replace(/'/g, "\\'")}';
+          "
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section">
+
+      <div class="section-head">
+
+        <h3>
+          Explore SoilTech
+        </h3>
+
+        <span>
+          Tap a point to explain it
+        </span>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        ${DATA.features
+          .map(
+            feature => `
+
+              <article
+                class="feature-card searchable">
+
+                <div class="feature-number">
+
+                  ${feature.icon}
+
+                </div>
+
+
+                <span class="tag">
+
+                  ${feature.category}
+
+                </span>
+
+
+                <h4>
+                  ${feature.title}
+                </h4>
+
+
+                <p>
+                  ${feature.short}
+                </p>
+
+
+                <button
+                  class="feature-open"
+                  onclick="openFeature('${feature.id}')">
+
+                  Explore →
+
+                </button>
+
+              </article>
+
+            `
+          )
+          .join("")}
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section stats">
+
+      <div class="stat">
+
+        <span class="stat-value">
+          6
+        </span>
+
+        <span class="stat-label">
+          Corner blade focus
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span class="stat-value">
+          21
+        </span>
+
+        <span class="stat-label">
+          Gearbox bolt size in script
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span class="stat-value">
+          4
+        </span>
+
+        <span class="stat-label">
+          Spring supports highlighted
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span class="stat-value">
+          3
+        </span>
+
+        <span class="stat-label">
+          Contact numbers
+        </span>
+
+      </div>
+
+    </section>
+
+    `,
+
+    "home",
+
+    "Viraj SoilTech",
+
+    "Interactive product presentation for customers and sales teams."
+
+  );
+
+}
+
+
+/* --------------------------------
+   WHY SOILTECH
+-------------------------------- */
+
+function why() {
+
+  return shell(
+
+    `
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Customer Conversation
+        </div>
+
+
+        <h2>
+          Show the reason.
+          Then show the machine.
+        </h2>
+
+
+        <p class="hero-description">
+
+          The salesperson can use this
+          tablet as a visual guide instead
+          of memorising the entire sales speech.
+
+        </p>
+
+
+        <div class="actions">
+
+          <button
+            class="btn btn-primary"
+            onclick="go('features')">
+
+            Explore Features
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-product">
+
+        <img
+          src="assets/VVKL7417.JPG"
+          alt="Viraj SoilTech Rotavator"
+        />
+
+      </div>
+
+    </section>
+
+
+    <section class="section feature-layout">
+
+      <div class="large-card">
+
+        <span class="badge">
+          Tillage
+        </span>
+
+        <h3>
+          Corner blade arrangement
+        </h3>
+
+        <p>
+
+          Use the real Viraj product
+          photograph and highlight the
+          center and corner blade areas.
+
+        </p>
+
+
+        <div
+          class="diagram"
+          style="
+            margin-top:20px;
+            padding:18px;
+            border-radius:16px;
+            background:#f0f5f1;
+          ">
+
+          <div
+            style="
+              display:flex;
+              gap:5px;
+              margin-bottom:18px;
+            ">
+
+            ${'<span style="height:12px;flex:1;background:#0b3d2e;border-radius:4px"></span>'.repeat(6)}
+
+          </div>
+
+
+          <div
+            style="
+              color:#68766e;
+              font-size:11px;
+              font-weight:800;
+            ">
+
+            CENTER / CORNER VISUAL EXPLANATION
 
           </div>
 
         </div>
 
       </div>
-    `)
-    .join("");
 
 
-  return shell(`
+      <div class="visual-panel">
 
-    <section class="hero">
+        <img
+          src="assets/VVKL7454.JPG"
+          alt="Viraj blade arrangement"
+        />
 
-      <div>
-
-        <div class="eyebrow">
-          Agricultural Machinery • Rotavator
-        </div>
-
-        <h2>
-          Make the customer understand
-          the product before discussing the price.
-        </h2>
-
-        <p>
-          This first version turns the Viraj SoilTech
-          sales material into a guided tablet presentation:
-          explain features, show benefits, compare design
-          points and finish with guarantee and contact
-          information.
-        </p>
-
-        <div class="actions">
-
-          <button
-            class="btn primary"
-            onclick="navigate('why')">
-            Start Presentation →
-          </button>
-
-          <button
-            class="btn light"
-            onclick="navigate('compare')">
-            Quick Compare
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <div class="product-art">
-        ${machineSvg()}
       </div>
 
     </section>
@@ -349,215 +780,46 @@ function home() {
     <section class="section">
 
       <div class="section-head">
-        <h3>Key product points</h3>
-        <span>Tap any point to open details</span>
-      </div>
 
-      <div class="grid grid-3">
-        ${cards}
-      </div>
-
-    </section>
-
-
-    <section class="section kpis">
-
-      <div class="kpi">
-        <strong>6</strong>
-        <span>Corner blade focus</span>
-      </div>
-
-      <div class="kpi">
-        <strong>21</strong>
-        <span>Gearbox bolt size in script</span>
-      </div>
-
-      <div class="kpi">
-        <strong>4</strong>
-        <span>Spring supports highlighted</span>
-      </div>
-
-      <div class="kpi">
-        <strong>3</strong>
-        <span>Contact numbers</span>
-      </div>
-
-    </section>
-
-
-    <section class="section contact">
-
-      <div>
-        <h3>${DATA.brand}</h3>
-        <p>${DATA.tagline}</p>
-      </div>
-
-      <div class="numbers">
-        ${DATA.contacts
-          .map(number => `<span class="number">${number}</span>`)
-          .join("")}
-      </div>
-
-    </section>
-
-  `, "home",
-     "Viraj SoilTech",
-     "Interactive product presentation for customers and sales teams.");
-}
-
-
-/* -------------------------
-   WHY SOILTECH
-------------------------- */
-
-function why() {
-
-  return shell(`
-
-    <section class="hero">
-
-      <div>
-
-        <div class="eyebrow">
-          Why SoilTech
-        </div>
-
-        <h2>
-          Turn product features into
-          simple farmer benefits.
-        </h2>
-
-        <p>
-          The salesperson can use the tablet
-          as a visual guide instead of memorising
-          the full sales presentation.
-        </p>
-
-      </div>
-
-      <div class="product-art">
-        ${machineSvg()}
-      </div>
-
-    </section>
-
-
-    <section class="section grid grid-2">
-
-      <div class="card">
-
-        <span class="badge">
-          01 • Tillage
-        </span>
-
-        <h4>
-          Corner blade explanation
-        </h4>
-
-        <p>
-          Use the actual product photograph in the
-          production version and highlight the center
-          and corner blade areas.
-        </p>
-
-        <div class="diagram">
-
-          <div class="diagram-row">
-
-            <span class="diagram-label">
-              Center
-            </span>
-
-            <div class="bars">
-              ${'<i class="bar on"></i>'.repeat(6)}
-            </div>
-
-          </div>
-
-
-          <div class="diagram-row">
-
-            <span class="diagram-label">
-              Corner
-            </span>
-
-            <div class="bars">
-              ${'<i class="bar on"></i>'.repeat(6)}
-            </div>
-
-          </div>
-
-        </div>
+        <h3>
+          Farmer-friendly benefits
+        </h3>
 
       </div>
 
 
-      <div class="card">
-
-        <span class="badge">
-          02 • Support
-        </span>
-
-        <h4>
-          Gearbox explanation
-        </h4>
-
-        <p>
-          Open the gearbox feature and show the
-          bolt/support details on the physical machine.
-        </p>
-
-        <div class="diagram">
-
-          <div class="diagram-row">
-
-            <span class="diagram-label">
-              Support
-            </span>
-
-            <div class="bars">
-              ${'<i class="bar on"></i>'.repeat(6)}
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="section card">
-
-      <h4>
-        Farmer benefit language
-      </h4>
-
-      <div class="grid grid-3">
+      <div class="feature-grid">
 
         ${[
           [
-            "Time",
-            "Explain how unnecessary repeat work can cost time."
+            "TIME",
+            "Explain unnecessary repeat work and the time impact."
           ],
           [
-            "Diesel",
+            "DIESEL",
             "Explain the fuel implication of repeat passes."
           ],
           [
-            "Confidence",
-            "Show visible construction and written guarantee."
+            "CONFIDENCE",
+            "Show visible construction and written terms."
           ]
         ]
-          .map(item => `
-            <div class="feature searchable">
+          .map(
+            item => `
 
-              ${icon("✓")}
+              <div class="feature-card">
 
-              <div>
+                <div class="feature-number">
+                  ✓
+                </div>
 
-                <h4>${item[0]}</h4>
+                <span class="tag">
+                  Benefit
+                </span>
+
+                <h4>
+                  ${item[0]}
+                </h4>
 
                 <p>
                   ${item[1]}
@@ -565,310 +827,337 @@ function why() {
 
               </div>
 
-            </div>
-          `)
+            `
+          )
           .join("")}
 
       </div>
 
     </section>
 
-  `, "why",
-     "Why SoilTech?",
-     "Explain the reason behind the design in farmer-friendly language.");
+    `,
+
+    "why",
+
+    "Why SoilTech?",
+
+    "Turn technical details into a simple customer conversation."
+
+  );
+
 }
 
 
-/* -------------------------
+/* --------------------------------
    FEATURES
-------------------------- */
+-------------------------------- */
 
 function features() {
 
-  return shell(`
+  return shell(
 
-    <section class="section grid grid-2">
+    `
 
-      ${DATA.features
-        .map(feature => `
-          <div class="card searchable">
+    <section class="section">
 
-            <div class="feature">
+      <div class="section-head">
 
-              ${icon(feature.icon)}
+        <h3>
+          Product Features
+        </h3>
 
-              <div>
+        <span>
+          ${DATA.features.length} core points
+        </span>
 
-                <span class="badge">
-                  ${feature.section}
+      </div>
+
+
+      <div class="feature-grid">
+
+        ${DATA.features
+          .map(
+            feature => `
+
+              <article
+                class="feature-card searchable">
+
+                <div class="feature-number">
+
+                  ${feature.icon}
+
+                </div>
+
+
+                <span class="tag">
+
+                  ${feature.category}
+
                 </span>
+
 
                 <h4>
                   ${feature.title}
                 </h4>
 
+
                 <p>
                   ${feature.detail}
                 </p>
 
+
                 <button
-                  class="btn soft"
-                  style="margin-top:12px"
-                  onclick="showFeature('${escapeText(feature.title)}')">
-                  Open explanation
+                  class="feature-open"
+                  onclick="openFeature('${feature.id}')">
+
+                  View visual explanation →
+
                 </button>
 
-              </div>
+              </article>
 
-            </div>
-
-          </div>
-        `)
-        .join("")}
-
-    </section>
-
-
-    <section class="section card">
-
-      <h4>
-        Recommended customer flow
-      </h4>
-
-      <div class="grid grid-3">
-
-        ${DATA.salesSteps
-          .map((step, index) => `
-            <div class="feature">
-
-              ${icon(index + 1)}
-
-              <div>
-
-                <h4>
-                  ${step}
-                </h4>
-
-                <p>
-                  Use a short explanation and point
-                  to the physical machine.
-                </p>
-
-              </div>
-
-            </div>
-          `)
+            `
+          )
           .join("")}
 
       </div>
 
     </section>
 
-  `, "features",
-     "Product Features",
-     "Six core feature cards for the first Rotavator demo.");
+
+    <section class="section">
+
+      <div class="section-head">
+
+        <h3>
+          Sales flow
+        </h3>
+
+      </div>
+
+
+      <div class="flow">
+
+        ${DATA.salesFlow
+          .map(
+            (step, index) => `
+
+              <div class="flow-step">
+
+                <div class="flow-number">
+
+                  ${index + 1}
+
+                </div>
+
+
+                <h4>
+                  ${step}
+                </h4>
+
+
+                <p>
+                  Keep it short, visual and
+                  connected to the physical machine.
+                </p>
+
+              </div>
+
+            `
+          )
+          .join("")}
+
+      </div>
+
+    </section>
+
+    `,
+
+    "features",
+
+    "Product Features",
+
+    "Show the feature, explain the reason, then show the physical component."
+
+  );
+
 }
 
 
-/* -------------------------
-   COMPARISON
-------------------------- */
+/* --------------------------------
+   FEATURE MODAL
+-------------------------------- */
+
+function openFeature(id) {
+
+  const feature =
+    DATA.features.find(
+      item => item.id === id
+    );
+
+  if (!feature) return;
+
+
+  document.getElementById(
+    "modalContent"
+  ).innerHTML = `
+
+    <div class="modal-content-grid">
+
+      <div class="modal-icon">
+
+        ${feature.icon}
+
+      </div>
+
+
+      <div>
+
+        <span class="badge">
+
+          ${feature.category}
+
+        </span>
+
+
+        <h2>
+          ${feature.title}
+        </h2>
+
+
+        <p>
+          ${feature.detail}
+        </p>
+
+
+        <button
+          class="btn btn-primary"
+          onclick="go('product')">
+
+          Open Product View
+
+        </button>
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  const modal =
+    document.getElementById("modal");
+
+  modal.classList.add("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+}
+
+
+function closeModal() {
+
+  const modal =
+    document.getElementById("modal");
+
+  modal.classList.remove("show");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+}
+
+
+/* --------------------------------
+   COMPARE
+-------------------------------- */
 
 function compare() {
 
-  return shell(`
+  return shell(
 
-    <section class="section card compare">
+    `
 
-      <span class="badge">
-        Demo comparison
-      </span>
+    <section class="section">
 
-      <h3 style="margin:10px 0">
-        Common market point vs. SoilTech positioning
-      </h3>
+      <div class="section-head">
 
-      <p style="color:var(--muted)">
-        Built from the supplied sales script.
-        This is not an independent engineering test.
-      </p>
+        <h3>
+          Quick Comparison
+        </h3>
 
+        <span>
+          Sales presentation view
+        </span>
 
-      <table>
+      </div>
 
-        <thead>
 
-          <tr>
-            <th>Point</th>
-            <th>Common market point in supplied script</th>
-            <th>Viraj SoilTech positioning</th>
-          </tr>
+      <div class="compare-wrap">
 
-        </thead>
+        <table class="compare-table">
 
+          <thead>
 
-        <tbody>
+            <tr>
 
-          <tr>
+              <th>
+                Point
+              </th>
 
-            <td>
-              <strong>Corner blade</strong>
-            </td>
+              <th>
+                Common market point
+              </th>
 
-            <td>
-              Script describes many market rotavators
-              with 6 blades at center and fewer at corner.
-            </td>
+              <th>
+                SoilTech positioning
+              </th>
 
-            <td class="good">
-              6-blade corner arrangement highlighted.
-            </td>
+            </tr>
 
-          </tr>
+          </thead>
 
 
-          <tr>
+          <tbody>
 
-            <td>
-              <strong>Corner direction</strong>
-            </td>
+            ${DATA.comparison
+              .map(
+                item => `
 
-            <td>
-              Script states inward-facing corner blades
-              may allow residue to collect.
-            </td>
+                  <tr>
 
-            <td class="good">
-              Outer-facing corner blade design highlighted.
-            </td>
+                    <td>
+                      <strong>
+                        ${item.point}
+                      </strong>
+                    </td>
 
-          </tr>
 
+                    <td>
+                      ${item.market}
+                    </td>
 
-          <tr>
 
-            <td>
-              <strong>Gearbox support</strong>
-            </td>
+                    <td class="good">
+                      ${item.viraj}
+                    </td>
 
-            <td>
-              5 × 17-number support bolts mentioned.
-            </td>
+                  </tr>
 
-            <td class="good">
-              6 × 21-number high-tension lock nut-bolts
-              + outer check nut mentioned.
-            </td>
+                `
+              )
+              .join("")}
 
-          </tr>
+          </tbody>
 
+        </table>
 
-          <tr>
-
-            <td>
-              <strong>Rear springs</strong>
-            </td>
-
-            <td>
-              2 springs mentioned.
-            </td>
-
-            <td class="good">
-              4 springs highlighted.
-            </td>
-
-          </tr>
-
-
-          <tr>
-
-            <td>
-              <strong>Guarantee</strong>
-            </td>
-
-            <td>
-              Verbal/unclear warranty is described
-              as a pain point.
-            </td>
-
-            <td class="good">
-              Written guarantee terms highlighted.
-            </td>
-
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </section>
-
-
-    <section class="section notice">
-
-      <strong>Before public use:</strong>
-
-      Have Viraj approve every numeric specification
-      and comparative statement in this screen.
-
-    </section>
-
-  `, "compare",
-     "Quick Comparison",
-     "A visual comparison screen for the salesperson.");
-}
-
-
-/* -------------------------
-   PRODUCT VIEW
-------------------------- */
-
-function productView() {
-
-  const slots = [
-    ["Hero / Full machine", "assets/viraj-hero.jpg"],
-    ["Blade & corner", "assets/viraj-blades.jpg"],
-    ["Side gearbox", "assets/viraj-gearbox.jpg"],
-    ["Spring support", "assets/viraj-springs.jpg"],
-    ["Base plate / clamps", "assets/viraj-base.jpg"],
-    ["Guarantee / logo", "assets/viraj-guarantee.jpg"]
-  ];
-
-
-  return shell(`
-
-    <section class="section photo-grid">
-
-      ${slots
-        .map(([name, image]) => `
-          <div class="card">
-
-            <div class="photo-box">
-
-              <img
-                src="${image}"
-                alt="${name}"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-              />
-
-              <span class="photo-label">
-                ${name}
-              </span>
-
-            </div>
-
-            <h4>
-              ${name}
-            </h4>
-
-            <p>
-              Replace the placeholder path with the
-              approved Viraj image in the assets folder.
-            </p>
-
-          </div>
-        `)
-        .join("")}
+      </div>
 
     </section>
 
@@ -876,187 +1165,392 @@ function productView() {
     <section class="section notice">
 
       <strong>
-        How to add your real photos:
+        Approval note:
       </strong>
 
-      Put the approved JPG/PNG files in the
-      <code>assets</code> folder using the filenames
-      shown above.
+      Numeric specifications and
+      comparative language should be
+      approved by Viraj before public use.
 
     </section>
 
-  `, "product",
-     "Product View",
-     "Photo slots prepared for approved Viraj images.");
+    `,
+
+    "compare",
+
+    "Quick Comparison",
+
+    "A customer-friendly comparison screen for the salesperson."
+
+  );
+
 }
 
 
-/* -------------------------
+/* --------------------------------
+   PRODUCT VIEW
+-------------------------------- */
+
+function productView() {
+
+  const images = [
+
+    [
+      "Full Machine",
+      "assets/VVKL7416.JPG"
+    ],
+
+    [
+      "Blade Arrangement",
+      "assets/VVKL7454.JPG"
+    ],
+
+    [
+      "Corner Blade",
+      "assets/VVKL7455.JPG"
+    ],
+
+    [
+      "Side Gearbox",
+      "assets/VVKL7473.JPG"
+    ],
+
+    [
+      "Strong Structure",
+      "assets/VVKL7438.JPG"
+    ],
+
+    [
+      "Final Product",
+      "assets/VVKL7417.JPG"
+    ]
+
+  ];
+
+
+  return shell(
+
+    `
+
+    <section class="section">
+
+      <div class="section-head">
+
+        <h3>
+          Product View
+        </h3>
+
+        <span>
+          Real Viraj product imagery
+        </span>
+
+      </div>
+
+
+      <div class="gallery">
+
+        ${images
+          .map(
+            ([label, image]) => `
+
+              <div
+                class="gallery-card"
+                onclick="openImage('${image}','${label}')">
+
+                <img
+                  src="${image}"
+                  alt="${label}"
+                  onerror="
+                    this.style.display='none';
+                  "
+                />
+
+
+                <span class="gallery-label">
+
+                  ${label}
+
+                </span>
+
+              </div>
+
+            `
+          )
+          .join("")}
+
+      </div>
+
+    </section>
+
+
+    <section class="section notice">
+
+      <strong>
+        Production asset step:
+      </strong>
+
+      Replace the six asset files with
+      the approved original Viraj images.
+      No changes are required to the UI.
+
+    </section>
+
+    `,
+
+    "product",
+
+    "Product View",
+
+    "A visual gallery for customer-facing demonstrations."
+
+  );
+
+}
+
+
+/* --------------------------------
+   IMAGE MODAL
+-------------------------------- */
+
+function openImage(image, label) {
+
+  document.getElementById(
+    "modalContent"
+  ).innerHTML = `
+
+    <div>
+
+      <span class="badge">
+        Viraj SoilTech
+      </span>
+
+
+      <h2>
+        ${label}
+      </h2>
+
+
+      <div
+        style="
+          margin-top:15px;
+          border-radius:17px;
+          overflow:hidden;
+          background:#e8ede9;
+        ">
+
+        <img
+          src="${image}"
+          alt="${label}"
+          style="
+            width:100%;
+            display:block;
+            max-height:65vh;
+            object-fit:contain;
+          "
+        />
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  document
+    .getElementById("modal")
+    .classList.add("show");
+
+}
+
+
+/* --------------------------------
    SALESMAN MODE
-------------------------- */
+-------------------------------- */
 
 function sales() {
 
-  return shell(`
+  return shell(
 
-    <section class="section sales">
+    `
 
-      <h3>
-        Salesman Mode
-      </h3>
+    <section class="section">
 
-      <p>
-        Use this screen while standing with the customer.
-        The salesperson can follow the flow without
-        memorising the full speech.
-      </p>
+      <div class="hero">
 
-      <ol>
+        <div class="hero-content">
 
-        ${DATA.salesSteps
-          .map(step => `<li>${step}</li>`)
-          .join("")}
-
-      </ol>
-
-    </section>
-
-
-    <section class="section grid grid-3">
-
-      ${[
-        "Blade demo",
-        "Gearbox demo",
-        "Guarantee demo"
-      ]
-        .map((title, index) => `
-          <div class="card searchable">
-
-            <span class="badge">
-              Step ${index + 1}
-            </span>
-
-            <h4>
-              ${title}
-            </h4>
-
-            <p>
-              Open the matching feature and show the
-              same component on the physical Rotavator.
-            </p>
-
+          <div class="eyebrow">
+            Salesman Mode
           </div>
-        `)
-        .join("")}
+
+
+          <h2>
+            Let the tablet
+            carry the conversation.
+          </h2>
+
+
+          <p class="hero-description">
+
+            The employee doesn't need to
+            memorise the complete script.
+            Follow the sequence and show
+            the machine physically.
+
+          </p>
+
+        </div>
+
+
+        <div class="hero-product">
+
+          <img
+            src="assets/VVKL7417.JPG"
+            alt="Viraj SoilTech"
+          />
+
+        </div>
+
+      </div>
 
     </section>
 
 
-    <section class="section contact">
+    <section class="section">
 
-      <div>
+      <div class="flow">
 
-        <h3>
-          Close the conversation
-        </h3>
+        ${DATA.salesFlow
+          .map(
+            (step, index) => `
 
-        <p>
-          Ask tractor HP, soil type and required width
-          before giving the final recommendation.
-        </p>
+              <div class="flow-step">
 
-      </div>
+                <div class="flow-number">
+                  ${index + 1}
+                </div>
 
-      <div class="numbers">
+                <h4>
+                  ${step}
+                </h4>
 
-        ${DATA.contacts
-          .map(number => `<span class="number">${number}</span>`)
+                <p>
+                  Use the corresponding
+                  screen or physical component.
+                </p>
+
+              </div>
+
+            `
+          )
           .join("")}
 
       </div>
 
     </section>
 
-  `, "sales",
-     "Salesman Mode",
-     "A simple guided sales flow for the tablet.");
+    `,
+
+    "sales",
+
+    "Salesman Mode",
+
+    "A guided flow for customer conversations."
+
+  );
+
 }
 
 
-/* -------------------------
-   UTILITIES
-------------------------- */
-
-function escapeText(value) {
-  return value.replace(/'/g, "\\'");
-}
-
+/* --------------------------------
+   SEARCH
+-------------------------------- */
 
 function searchCards(query) {
 
-  query = (query || "")
-    .toLowerCase()
-    .trim();
+  query =
+    (query || "")
+      .trim()
+      .toLowerCase();
+
 
   document
     .querySelectorAll(".searchable")
-    .forEach(element => {
+    .forEach(card => {
 
-      const text =
-        element.innerText.toLowerCase();
+      card.style.display =
+        !query ||
+        card.innerText
+          .toLowerCase()
+          .includes(query)
 
-      element.style.display =
-        !query || text.includes(query)
           ? ""
+
           : "none";
+
     });
+
 }
 
 
-function showFeature(title) {
-
-  const feature =
-    DATA.features.find(item => item.title === title);
-
-  if (!feature) {
-    return;
-  }
-
-  alert(
-    `${feature.title}\n\n` +
-    `${feature.detail}\n\n` +
-    `For the production version, this can open ` +
-    `the actual Viraj photograph, specification card ` +
-    `and a short sales explanation.`
-  );
-}
-
-
-/* -------------------------
-   ROUTING
-------------------------- */
+/* --------------------------------
+   ROUTER
+-------------------------------- */
 
 const pages = {
+
   home,
+
   why,
+
   features,
+
   compare,
+
   product: productView,
+
   sales
+
 };
 
 
-function navigate(id) {
+function go(page) {
 
-  document.getElementById("app").innerHTML =
-    pages[id]();
+  const render =
+    pages[page] || home;
+
+  document.getElementById(
+    "app"
+  ).innerHTML = render();
 
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
+
 }
 
 
-/* Start */
-navigate("home");
+/* --------------------------------
+   KEYBOARD
+-------------------------------- */
+
+document.addEventListener(
+  "keydown",
+  event => {
+
+    if (event.key === "Escape") {
+
+      closeModal();
+
+    }
+
+  }
+);
+
+
+/* --------------------------------
+   START
+-------------------------------- */
+
+go("home");
