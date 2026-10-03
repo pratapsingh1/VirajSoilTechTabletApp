@@ -1,3 +1,13 @@
+/* =========================================================
+   VIRAJ SOILTECH
+   TABLET PRODUCT ADVISOR - V3
+========================================================= */
+
+
+/* =========================================================
+   DATA
+========================================================= */
+
 const DATA = {
 
   contacts: [
@@ -6,51 +16,67 @@ const DATA = {
     "9011773262"
   ],
 
+
   heroImages: [
+
     "assets/VVKL7416.JPG",
+
     "assets/VVKL7417.JPG",
+
     "assets/VVKL7438.JPG"
+
   ],
 
+
   gallery: [
+
     {
       title: "Full Machine",
       image: "assets/VVKL7416.JPG"
     },
+
     {
       title: "Blade Arrangement",
       image: "assets/VVKL7454.JPG"
     },
+
     {
       title: "Corner Blade",
       image: "assets/VVKL7455.JPG"
     },
+
+    {
+      title: "Cleaning / Side Area",
+      image: "assets/VVKL7466.JPG"
+    },
+
     {
       title: "Side Gearbox",
       image: "assets/VVKL7473.JPG"
     },
+
     {
       title: "Strong Structure",
       image: "assets/VVKL7438.JPG"
-    },
-    {
-      title: "Product Finish",
-      image: "assets/VVKL7417.JPG"
     }
+
   ],
+
 
   features: [
 
     {
       id: "blade",
+
       icon: "6",
+
       tag: "BLADE SYSTEM",
 
       title:
         "Corner Blade Arrangement",
 
       summary:
-        "Show the customer the working-width story visually.",
+        "Explain the working-width story visually.",
 
       detail:
         "The supplied Viraj sales material highlights a 6-blade arrangement at the corner to target more uniform full-width tillage and reduce unnecessary repeat work.",
@@ -59,16 +85,23 @@ const DATA = {
         "assets/VVKL7454.JPG",
 
       benefits: [
+
         "Full-width focus",
+
         "Less repeat work",
+
         "Easy visual demo"
+
       ]
+
     },
 
 
     {
       id: "direction",
+
       icon: "↗",
+
       tag: "BLADE SYSTEM",
 
       title:
@@ -84,16 +117,23 @@ const DATA = {
         "assets/VVKL7455.JPG",
 
       benefits: [
+
         "Residue focus",
+
         "Cleaner side area",
-        "Simple physical demo"
+
+        "Physical demonstration"
+
       ]
+
     },
 
 
     {
       id: "gearbox",
+
       icon: "21",
+
       tag: "GEARBOX",
 
       title:
@@ -109,16 +149,23 @@ const DATA = {
         "assets/VVKL7473.JPG",
 
       benefits: [
+
         "21-number bolts",
+
         "6 support bolts",
+
         "Outer check nut"
+
       ]
+
     },
 
 
     {
       id: "springs",
+
       icon: "4",
+
       tag: "CONSTRUCTION",
 
       title:
@@ -134,16 +181,23 @@ const DATA = {
         "assets/VVKL7438.JPG",
 
       benefits: [
-        "4 springs",
-        "Rear support",
+
+        "4 spring support",
+
+        "Rear structure",
+
         "Physical inspection"
+
       ]
+
     },
 
 
     {
       id: "structure",
+
       icon: "▣",
+
       tag: "CONSTRUCTION",
 
       title:
@@ -159,16 +213,23 @@ const DATA = {
         "assets/VVKL7438.JPG",
 
       benefits: [
+
         "Heavy body",
+
         "Thick base",
+
         "Double clamp"
+
       ]
+
     },
 
 
     {
       id: "guarantee",
+
       icon: "✓",
+
       tag: "GUARANTEE",
 
       title:
@@ -184,10 +245,15 @@ const DATA = {
         "assets/VVKL7417.JPG",
 
       benefits: [
+
         "Written terms",
+
         "Clear conditions",
+
         "Customer confidence"
+
       ]
+
     }
 
   ],
@@ -196,47 +262,57 @@ const DATA = {
   compare: [
 
     [
+
       "Corner blade",
 
       "Supplied script describes many market rotavators with 6 blades at center and fewer at corner.",
 
       "6-blade corner arrangement highlighted."
+
     ],
 
 
     [
+
       "Corner direction",
 
       "Supplied script states inward-facing corner blades may allow residue to collect.",
 
       "Outer-facing corner blade design highlighted."
+
     ],
 
 
     [
+
       "Gearbox support",
 
       "5 × 17-number support bolts mentioned in the supplied script.",
 
       "6 × 21-number high-tension lock nut-bolts + outer check nut mentioned."
+
     ],
 
 
     [
+
       "Rear springs",
 
       "2 springs mentioned in the supplied script.",
 
       "4 springs highlighted."
+
     ],
 
 
     [
+
       "Guarantee",
 
       "Verbal/unclear warranty is described as a pain point.",
 
       "Written guarantee terms highlighted."
+
     ]
 
   ],
@@ -245,62 +321,78 @@ const DATA = {
   questions: [
 
     {
+
       key: "hp",
 
       question:
         "What tractor HP are you using?",
 
       options: [
+
         "45 HP",
         "50 HP",
         "55 HP",
         "60+ HP"
+
       ]
+
     },
 
 
     {
+
       key: "soil",
 
       question:
-        "What type of soil do you usually work in?",
+        "What soil do you usually work in?",
 
       options: [
+
         "Black Soil",
         "Medium Soil",
         "Mixed / Other",
         "Not sure"
+
       ]
+
     },
 
 
     {
+
       key: "usage",
 
       question:
         "How will you use the Rotavator?",
 
       options: [
+
         "Own Farm",
         "Rental / Commercial",
         "Both",
         "Not sure"
+
       ]
+
     },
 
 
     {
+
       key: "width",
 
       question:
         "What working width are you considering?",
 
       options: [
+
         "5 FT",
         "6 FT",
         "7 FT",
         "Not sure"
+
       ]
+
     }
 
   ]
@@ -308,7 +400,61 @@ const DATA = {
 };
 
 
-const NAV = [
+/* =========================================================
+   PROVISIONAL DEMO RECOMMENDATION
+   Replace later with Viraj's approved matrix.
+========================================================= */
+
+const DEMO_WIDTH_RULES = {
+
+  "45 HP": "5 FT",
+
+  "50 HP": "5 FT",
+
+  "55 HP": "6 FT",
+
+  "60+ HP": "7 FT"
+
+};
+
+
+/* =========================================================
+   STATE
+========================================================= */
+
+let currentPage = "home";
+
+let heroIndex = 0;
+
+let demoFeatureIndex = 0;
+
+let recommendationStep = 0;
+
+let recommendationAnswers = {};
+
+
+let viewerScale = 1;
+
+let viewerX = 0;
+
+let viewerY = 0;
+
+let dragging = false;
+
+let dragStartX = 0;
+
+let dragStartY = 0;
+
+let dragOriginX = 0;
+
+let dragOriginY = 0;
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+const NAV_ITEMS = [
 
   ["home", "Dashboard"],
 
@@ -327,31 +473,20 @@ const NAV = [
 ];
 
 
-let currentPage = "home";
+function navigation(active) {
 
-let heroIndex = 0;
-
-let demoFeatureIndex = 0;
-
-let recoStep = 0;
-
-let recoAnswers = {};
-
-
-/* -------------------------------------
-   COMMON
-------------------------------------- */
-
-function nav(active) {
-
-  return NAV
+  return NAV_ITEMS
     .map(
       ([id, label]) => `
+
         <button
           class="${active === id ? "active" : ""}"
           onclick="go('${id}')">
+
           ${label}
+
         </button>
+
       `
     )
     .join("");
@@ -359,7 +494,11 @@ function nav(active) {
 }
 
 
-function contactCard() {
+/* =========================================================
+   COMMON SHELL
+========================================================= */
+
+function contactSection() {
 
   return `
 
@@ -372,8 +511,7 @@ function contactCard() {
         </h3>
 
         <p>
-          Product Demo • Written Guarantee •
-          Local Support
+          Product Demo • Written Guarantee • Local Support
         </p>
 
       </div>
@@ -383,8 +521,8 @@ function contactCard() {
 
         ${DATA.contacts
           .map(
-            number =>
-              `<span class="number">${number}</span>`
+            n =>
+              `<span class="number">${n}</span>`
           )
           .join("")}
 
@@ -434,7 +572,7 @@ function shell(
 
         <nav class="nav">
 
-          ${nav(active)}
+          ${navigation(active)}
 
         </nav>
 
@@ -445,8 +583,8 @@ function shell(
           presentation experience.
 
           Product specifications and
-          comparison claims should be
-          approved by Viraj before public use.
+          comparative claims should be
+          approved before public use.
 
         </div>
 
@@ -490,37 +628,45 @@ function shell(
 }
 
 
-/* -------------------------------------
-   HOME
-------------------------------------- */
+/* =========================================================
+   DASHBOARD
+========================================================= */
 
 function home() {
 
-  const cards =
+  const tiles =
     DATA.features
       .map(
-        feature => `
+        (feature) => `
 
           <article
             class="tile searchable">
 
-            <div class="number">
+            <div class="tile-number">
+
               ${feature.icon}
+
             </div>
 
 
             <span class="tag">
+
               ${feature.tag}
+
             </span>
 
 
             <h4>
+
               ${feature.title}
+
             </h4>
 
 
             <p>
+
               ${feature.summary}
+
             </p>
 
 
@@ -540,11 +686,12 @@ function home() {
 
 
   return shell(
+
     "home",
 
     "Viraj SoilTech",
 
-    "Premium tablet presentation for customers and sales teams.",
+    "Premium tablet product presentation.",
 
     `
 
@@ -553,17 +700,21 @@ function home() {
         <div class="hero-copy">
 
           <div class="eyebrow">
+
             Agricultural Machinery • Rotavator
+
           </div>
 
 
           <h2>
+
             Don't just show the machine.
             Explain why it is built this way.
+
           </h2>
 
 
-          <p class="hero-description">
+          <p>
 
             Move the customer from
             problem → feature → benefit
@@ -576,7 +727,7 @@ function home() {
 
             <button
               class="btn btn-primary"
-              onclick="go('demo')">
+              onclick="startDemo()">
 
               Start Customer Demo →
 
@@ -602,16 +753,22 @@ function home() {
             id="heroImage"
             src="${DATA.heroImages[0]}"
             alt="Viraj SoilTech Rotavator"
-          />
+          >
 
 
-          <div class="dots">
+          <div
+            id="heroDots"
+            class="hero-dots">
 
             ${DATA.heroImages
               .map(
-                (_, i) => `
+                (_, index) => `
                   <span
-                    class="dot ${i === 0 ? "active" : ""}">
+                    class="hero-dot ${
+                      index === 0
+                        ? "active"
+                        : ""
+                    }">
                   </span>
                 `
               )
@@ -640,7 +797,7 @@ function home() {
           </h3>
 
           <span>
-            Tap to open a visual explanation
+            Tap any point
           </span>
 
         </div>
@@ -648,7 +805,7 @@ function home() {
 
         <div class="tile-grid">
 
-          ${cards}
+          ${tiles}
 
         </div>
 
@@ -677,7 +834,7 @@ function home() {
           </strong>
 
           <span>
-            Gearbox bolt size in script
+            Gearbox bolt size
           </span>
 
         </div>
@@ -690,7 +847,7 @@ function home() {
           </strong>
 
           <span>
-            Spring supports highlighted
+            Spring supports
           </span>
 
         </div>
@@ -711,34 +868,38 @@ function home() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
+/* =========================================================
    CUSTOMER DEMO
-------------------------------------- */
+========================================================= */
 
 function demo() {
 
   const feature =
-    DATA.features[demoFeatureIndex];
+    DATA.features[
+      demoFeatureIndex
+    ];
 
 
   return shell(
+
     "demo",
 
     "Customer Demo",
 
-    "A guided product conversation for use beside the machine.",
+    "A guided visual conversation for use beside the physical machine.",
 
     `
 
-      <section class="demo-layout section">
+      <section class="section demo-layout">
 
         <div class="demo-card">
 
@@ -749,9 +910,9 @@ function demo() {
               <div class="demo-meta">
 
                 CUSTOMER DEMO
-                /
+                •
                 ${demoFeatureIndex + 1}
-                OF
+                /
                 ${DATA.features.length}
 
               </div>
@@ -783,20 +944,21 @@ function demo() {
 
 
           <div
-            class="demo-image"
-            id="demoImage">
+            id="demoImage"
+            class="demo-image">
 
             <img
               src="${feature.image}"
               alt="${feature.title}"
-            />
+            >
 
 
             <div class="image-tools">
 
               <button
-                class="icon-button"
-                onclick="toggleZoom()">
+                class="icon-btn"
+                onclick="toggleDemoZoom()"
+                title="Zoom">
 
                 +
 
@@ -804,8 +966,14 @@ function demo() {
 
 
               <button
-                class="icon-button"
-                onclick="openImage('${feature.image}','${feature.title}')">
+                class="icon-btn"
+                onclick="
+                  openImage(
+                    '${feature.image}',
+                    '${escapeJs(feature.title)}'
+                  )
+                "
+                title="Open larger">
 
                 ↗
 
@@ -824,7 +992,9 @@ function demo() {
 
 
             <p>
+
               ${feature.detail}
+
             </p>
 
 
@@ -832,8 +1002,8 @@ function demo() {
 
               ${feature.benefits
                 .map(
-                  benefit =>
-                    `<div class="benefit">${benefit}</div>`
+                  b =>
+                    `<div class="benefit">${b}</div>`
                 )
                 .join("")}
 
@@ -855,7 +1025,7 @@ function demo() {
                 class="btn btn-primary"
                 onclick="go('recommend')">
 
-                Find the right option →
+                Find Suitable Option →
 
               </button>
 
@@ -869,13 +1039,15 @@ function demo() {
         <aside class="demo-side">
 
           <h4>
-            Product walkthrough
+            Product Walkthrough
           </h4>
 
 
           <p>
-            Tap a feature while standing
-            beside the physical machine.
+
+            Tap a feature while
+            standing beside the machine.
+
           </p>
 
 
@@ -886,11 +1058,19 @@ function demo() {
                 (item, index) => `
 
                   <button
-                    class="${index === demoFeatureIndex ? "active" : ""}"
-                    onclick="selectDemoFeature(${index})">
+                    class="${
+                      index === demoFeatureIndex
+                        ? "active"
+                        : ""
+                    }"
+
+                    onclick="
+                      selectDemoFeature(${index})
+                    ">
 
                     <span>
-                      ${index + 1}. ${item.title}
+                      ${index + 1}.
+                      ${item.title}
                     </span>
 
                     <span>
@@ -910,10 +1090,20 @@ function demo() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
+
+}
+
+
+function startDemo() {
+
+  demoFeatureIndex = 0;
+
+  go("demo");
 
 }
 
@@ -922,19 +1112,12 @@ function selectDemoFeature(index) {
 
   demoFeatureIndex = index;
 
-  document.getElementById(
-    "app"
-  ).innerHTML = demo();
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+  go("demo");
 
 }
 
 
-function toggleZoom() {
+function toggleDemoZoom() {
 
   document
     .getElementById("demoImage")
@@ -943,18 +1126,19 @@ function toggleZoom() {
 }
 
 
-/* -------------------------------------
+/* =========================================================
    FEATURES
-------------------------------------- */
+========================================================= */
 
 function features() {
 
   return shell(
+
     "features",
 
     "Product Features",
 
-    "Tap a feature to see its visual explanation.",
+    "Tap any feature to open the customer explanation.",
 
     `
 
@@ -969,31 +1153,44 @@ function features() {
                 <article
                   class="tile searchable">
 
-                  <div class="number">
+                  <div
+                    class="tile-number">
+
                     ${feature.icon}
+
                   </div>
 
 
                   <span class="tag">
+
                     ${feature.tag}
+
                   </span>
 
 
                   <h4>
+
                     ${feature.title}
+
                   </h4>
 
 
                   <p>
+
                     ${feature.detail}
+
                   </p>
 
 
                   <button
                     class="tile-link"
-                    onclick="openFeature('${feature.id}')">
+                    onclick="
+                      openFeature(
+                        '${feature.id}'
+                      )
+                    ">
 
-                    View explanation →
+                    View visual explanation →
 
                   </button>
 
@@ -1008,26 +1205,445 @@ function features() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
+/* =========================================================
+   FEATURE MODAL
+========================================================= */
+
+function openFeature(id) {
+
+  const feature =
+    DATA.features.find(
+      x => x.id === id
+    );
+
+
+  if (!feature) {
+
+    return;
+
+  }
+
+
+  document.getElementById(
+    "modalBody"
+  ).innerHTML = `
+
+    <span class="tag">
+
+      ${feature.tag}
+
+    </span>
+
+
+    <h2>
+
+      ${feature.title}
+
+    </h2>
+
+
+    <p>
+
+      ${feature.detail}
+
+    </p>
+
+
+    <div class="benefits">
+
+      ${feature.benefits
+        .map(
+          b =>
+            `<div class="benefit">${b}</div>`
+        )
+        .join("")}
+
+    </div>
+
+
+    <div class="actions">
+
+      <button
+        class="btn btn-primary"
+        onclick="
+          closeModal();
+
+          demoFeatureIndex =
+            ${DATA.features.indexOf(feature)};
+
+          go('demo');
+        ">
+
+        Use in Customer Demo →
+
+      </button>
+
+
+      <button
+        class="btn btn-soft"
+        onclick="
+          openImage(
+            '${feature.image}',
+            '${escapeJs(feature.title)}'
+          )
+        ">
+
+        Open Larger Photo
+
+      </button>
+
+    </div>
+
+  `;
+
+
+  showModal();
+
+}
+
+
+/* =========================================================
+   IMAGE VIEWER
+========================================================= */
+
+function openImage(
+  source,
+  title
+) {
+
+  viewerScale = 1;
+
+  viewerX = 0;
+
+  viewerY = 0;
+
+
+  document.getElementById(
+    "modalBody"
+  ).innerHTML = `
+
+    <span class="tag">
+      VIRAJ SOILTECH
+    </span>
+
+
+    <h2>
+
+      ${title}
+
+    </h2>
+
+
+    <p>
+
+      Use zoom and drag to inspect
+      the product detail.
+
+    </p>
+
+
+    <div
+      class="viewer"
+      id="viewer">
+
+      <img
+        id="viewerImage"
+        src="${source}"
+        alt="${title}"
+        draggable="false"
+      >
+
+
+      <div class="viewer-label">
+
+        ${title}
+
+      </div>
+
+
+      <div class="viewer-controls">
+
+        <button
+          class="viewer-btn"
+          onclick="zoomViewer(.25)"
+          title="Zoom in">
+
+          +
+
+        </button>
+
+
+        <button
+          class="viewer-btn"
+          onclick="zoomViewer(-.25)"
+          title="Zoom out">
+
+          −
+
+        </button>
+
+
+        <button
+          class="viewer-btn"
+          onclick="resetViewer()"
+          title="Reset">
+
+          ⟳
+
+        </button>
+
+
+        <button
+          class="viewer-btn"
+          onclick="closeModal()"
+          title="Close">
+
+          ×
+
+        </button>
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  showModal();
+
+  setupViewer();
+
+}
+
+
+function setupViewer() {
+
+  const viewer =
+    document.getElementById(
+      "viewer"
+    );
+
+
+  const image =
+    document.getElementById(
+      "viewerImage"
+    );
+
+
+  if (!viewer || !image) {
+
+    return;
+
+  }
+
+
+  viewer.addEventListener(
+    "wheel",
+
+    event => {
+
+      event.preventDefault();
+
+      zoomViewer(
+        event.deltaY < 0
+          ? .15
+          : -.15
+      );
+
+    },
+
+    {
+      passive: false
+    }
+
+  );
+
+
+  image.addEventListener(
+    "pointerdown",
+
+    event => {
+
+      dragging = true;
+
+      image.setPointerCapture(
+        event.pointerId
+      );
+
+
+      image.classList.add(
+        "dragging"
+      );
+
+
+      dragStartX =
+        event.clientX;
+
+      dragStartY =
+        event.clientY;
+
+      dragOriginX =
+        viewerX;
+
+      dragOriginY =
+        viewerY;
+
+    }
+
+  );
+
+
+  image.addEventListener(
+    "pointermove",
+
+    event => {
+
+      if (!dragging) {
+
+        return;
+
+      }
+
+
+      viewerX =
+        dragOriginX +
+        (
+          event.clientX -
+          dragStartX
+        );
+
+      viewerY =
+        dragOriginY +
+        (
+          event.clientY -
+          dragStartY
+        );
+
+
+      updateViewer();
+
+    }
+
+  );
+
+
+  image.addEventListener(
+    "pointerup",
+    stopDragging
+  );
+
+
+  image.addEventListener(
+    "pointercancel",
+    stopDragging
+  );
+
+}
+
+
+function stopDragging() {
+
+  dragging = false;
+
+
+  document
+    .getElementById(
+      "viewerImage"
+    )
+    ?.classList.remove(
+      "dragging"
+    );
+
+}
+
+
+function zoomViewer(
+  amount
+) {
+
+  viewerScale += amount;
+
+
+  viewerScale =
+    Math.max(
+      1,
+      Math.min(
+        4,
+        viewerScale
+      )
+    );
+
+
+  updateViewer();
+
+}
+
+
+function resetViewer() {
+
+  viewerScale = 1;
+
+  viewerX = 0;
+
+  viewerY = 0;
+
+
+  updateViewer();
+
+}
+
+
+function updateViewer() {
+
+  const image =
+    document.getElementById(
+      "viewerImage"
+    );
+
+
+  if (!image) {
+
+    return;
+
+  }
+
+
+  image.style.transform =
+    `
+      translate(
+        ${viewerX}px,
+        ${viewerY}px
+      )
+      scale(
+        ${viewerScale}
+      )
+    `;
+
+}
+
+
+/* =========================================================
    COMPARE
-------------------------------------- */
+========================================================= */
 
 function compare() {
 
   return shell(
+
     "compare",
 
     "Quick Comparison",
 
-    "A simple customer-facing comparison view.",
+    "Use this view when the customer wants a side-by-side explanation.",
 
     `
 
@@ -1093,39 +1709,37 @@ function compare() {
       </section>
 
 
-      <section class="section notice">
+      <section class="section warning">
 
-        <strong>
-          Approval before public use:
-        </strong>
-
-        Have Viraj confirm every numeric
-        specification and comparative
-        statement before customer deployment.
+        Numeric specifications and
+        comparative statements should
+        be approved by Viraj before public use.
 
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
+/* =========================================================
    PRODUCT VIEW
-------------------------------------- */
+========================================================= */
 
 function productView() {
 
   return shell(
+
     "product",
 
     "Product View",
 
-    "Use the actual Viraj images during customer discussions.",
+    "Tap any image to inspect the product in detail.",
 
     `
 
@@ -1136,13 +1750,22 @@ function productView() {
             (item, index) => `
 
               <div
-                class="gallery-item ${index === 0 ? "big" : ""}"
-                onclick="openImage('${item.image}','${item.title}')">
+                class="
+                  gallery-item
+                  ${index === 0 ? "big" : ""}
+                "
+
+                onclick="
+                  openImage(
+                    '${item.image}',
+                    '${escapeJs(item.title)}'
+                  )
+                ">
 
                 <img
                   src="${item.image}"
                   alt="${item.title}"
-                />
+                >
 
 
                 <div class="gallery-label">
@@ -1160,21 +1783,25 @@ function productView() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
+/* =========================================================
    RECOMMENDATION
-------------------------------------- */
+========================================================= */
 
 function recommendation() {
 
-  if (recoStep >= DATA.questions.length) {
+  if (
+    recommendationStep >=
+    DATA.questions.length
+  ) {
 
     return recommendationResult();
 
@@ -1182,45 +1809,56 @@ function recommendation() {
 
 
   const question =
-    DATA.questions[recoStep];
+    DATA.questions[
+      recommendationStep
+    ];
 
 
   const progress =
-    (recoStep /
-      DATA.questions.length) *
-    100;
+    (
+      recommendationStep /
+      DATA.questions.length
+    ) * 100;
 
 
   return shell(
+
     "recommend",
 
     "Recommendation",
 
-    "A first-step customer profiling flow.",
+    "Capture the customer's requirement before suggesting a model.",
 
     `
 
       <section class="section recommendation">
 
-        <div class="recommendation-head">
+        <div class="recommendation-top">
 
           <div>
 
             <div class="eyebrow">
-              Customer Recommendation
+
+              CUSTOMER PROFILING
+
             </div>
 
 
             <h2>
-              Let's understand the requirement.
+
+              Let's understand
+              the requirement.
+
             </h2>
 
 
             <p>
 
-              Ask a few simple questions
-              before suggesting the appropriate
-              product size or configuration.
+              Answer four simple questions.
+              The current demo uses provisional
+              recommendation logic that can later
+              be replaced with Viraj's approved
+              compatibility matrix.
 
             </p>
 
@@ -1230,7 +1868,7 @@ function recommendation() {
           <span class="tag">
 
             STEP
-            ${recoStep + 1}
+            ${recommendationStep + 1}
             /
             ${DATA.questions.length}
 
@@ -1242,7 +1880,9 @@ function recommendation() {
         <div class="progress">
 
           <span
-            style="width:${progress}%">
+            style="
+              width:${progress}%
+            ">
           </span>
 
         </div>
@@ -1251,7 +1891,9 @@ function recommendation() {
         <div class="question">
 
           <h4>
+
             ${question.question}
+
           </h4>
 
 
@@ -1262,25 +1904,37 @@ function recommendation() {
                 option => `
 
                   <button
-                    class="option ${
-                      recoAnswers[question.key] === option
-                        ? "selected"
-                        : ""
-                    }"
+                    class="
+                      option
+                      ${
+                        recommendationAnswers[
+                          question.key
+                        ] === option
+
+                          ? "selected"
+
+                          : ""
+                      }
+                    "
 
                     onclick="
                       selectRecommendation(
                         '${question.key}',
-                        '${option}'
+                        '${escapeJs(option)}'
                       )
                     ">
 
                     <strong>
+
                       ${option}
+
                     </strong>
 
+
                     <span>
+
                       Tap to select
+
                     </span>
 
                   </button>
@@ -1298,7 +1952,9 @@ function recommendation() {
 
           <button
             class="btn btn-light"
-            onclick="resetRecommendation()">
+            onclick="
+              resetRecommendation()
+            ">
 
             Reset
 
@@ -1307,7 +1963,9 @@ function recommendation() {
 
           <button
             class="btn btn-primary"
-            onclick="nextRecommendation()">
+            onclick="
+              nextRecommendation()
+            ">
 
             Next →
 
@@ -1318,6 +1976,7 @@ function recommendation() {
       </section>
 
     `
+
   );
 
 }
@@ -1328,7 +1987,10 @@ function selectRecommendation(
   value
 ) {
 
-  recoAnswers[key] = value;
+  recommendationAnswers[
+    key
+  ] = value;
+
 
   renderRecommendation();
 
@@ -1338,10 +2000,16 @@ function selectRecommendation(
 function nextRecommendation() {
 
   const question =
-    DATA.questions[recoStep];
+    DATA.questions[
+      recommendationStep
+    ];
 
 
-  if (!recoAnswers[question.key]) {
+  if (
+    !recommendationAnswers[
+      question.key
+    ]
+  ) {
 
     toast(
       "Please select an option first."
@@ -1352,7 +2020,7 @@ function nextRecommendation() {
   }
 
 
-  recoStep++;
+  recommendationStep++;
 
   renderRecommendation();
 
@@ -1361,9 +2029,9 @@ function nextRecommendation() {
 
 function resetRecommendation() {
 
-  recoStep = 0;
+  recommendationStep = 0;
 
-  recoAnswers = {};
+  recommendationAnswers = {};
 
   renderRecommendation();
 
@@ -1377,6 +2045,7 @@ function renderRecommendation() {
   ).innerHTML =
     recommendation();
 
+
   window.scrollTo({
     top: 0,
     behavior: "smooth"
@@ -1385,39 +2054,191 @@ function renderRecommendation() {
 }
 
 
+/* =========================================================
+   RECOMMENDATION RESULT
+========================================================= */
+
 function recommendationResult() {
 
+  const hp =
+    recommendationAnswers.hp ||
+    "Not specified";
+
+
+  const soil =
+    recommendationAnswers.soil ||
+    "Not specified";
+
+
+  const usage =
+    recommendationAnswers.usage ||
+    "Not specified";
+
+
+  const width =
+    recommendationAnswers.width ||
+    "Not specified";
+
+
+  const provisionalWidth =
+    DEMO_WIDTH_RULES[hp] ||
+    "6 FT";
+
+
+  const finalWidth =
+    width !== "Not sure" &&
+    width !== "Not specified"
+
+      ? width
+
+      : provisionalWidth;
+
+
+  let salesReason;
+
+
+  if (
+    usage === "Rental / Commercial" ||
+    usage === "Both"
+  ) {
+
+    salesReason =
+      "Focus the conversation on construction, gearbox support, field usage and service support.";
+
+  } else {
+
+    salesReason =
+      "Focus the conversation on working width, blade design, construction and written guarantee.";
+
+  }
+
+
   return shell(
+
     "recommend",
 
     "Customer Profile",
 
-    "Review the requirement before suggesting a model.",
+    "Provisional recommendation generated.",
 
     `
 
       <section class="section recommendation">
 
-        <div class="recommendation-head">
+        <div class="recommendation-top">
 
           <div>
 
             <div class="eyebrow">
+
               PROFILE COMPLETE
+
             </div>
 
 
             <h2>
-              Customer requirement captured.
+
+              Suggested SoilTech setup
+
             </h2>
 
 
             <p>
 
-              This first demo intentionally does
-              not invent a model recommendation.
-              The final version should use Viraj's
-              approved tractor-HP/model matrix.
+              The application has captured
+              the customer's requirements and
+              generated a starting point.
+
+            </p>
+
+          </div>
+
+
+          <span class="tag">
+
+            DEMO LOGIC
+
+          </span>
+
+        </div>
+
+
+        <div class="recommended-model">
+
+          <small>
+
+            PROVISIONAL STARTING POINT
+
+          </small>
+
+
+          <strong>
+
+            SoilTech ${finalWidth}
+
+          </strong>
+
+
+          <div class="pills">
+
+            <span class="pill">
+              Tractor: ${hp}
+            </span>
+
+            <span class="pill">
+              Soil: ${soil}
+            </span>
+
+            <span class="pill">
+              Usage: ${usage}
+            </span>
+
+            <span class="pill">
+              Requested: ${width}
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="result-grid">
+
+          <div class="result-box">
+
+            <h4>
+
+              Why this starting point?
+
+            </h4>
+
+
+            <p>
+
+              ${salesReason}
+
+            </p>
+
+          </div>
+
+
+          <div class="result-box">
+
+            <h4>
+
+              Salesperson next step
+
+            </h4>
+
+
+            <p>
+
+              Show the ${finalWidth}
+              product view, open the
+              relevant feature cards,
+              confirm the actual Viraj
+              specification and then
+              discuss price.
 
             </p>
 
@@ -1426,56 +2247,16 @@ function recommendationResult() {
         </div>
 
 
-        <div class="result">
+        <div class="warning">
 
-          <div class="result-box">
+          <strong>
+            DEMO ONLY:
+          </strong>
 
-            <h4>
-              Customer profile
-            </h4>
-
-
-            <div class="pills">
-
-              ${Object.entries(recoAnswers)
-                .map(
-                  ([key, value]) =>
-                    `<span class="pill">${key.toUpperCase()}: ${value}</span>`
-                )
-                .join("")}
-
-            </div>
-
-          </div>
-
-
-          <div class="result-box">
-
-            <h4>
-              Next action
-            </h4>
-
-
-            <p>
-
-              Open the approved Viraj
-              specification/model screen,
-              confirm compatibility and
-              then discuss the price.
-
-            </p>
-
-
-            <div class="warning">
-
-              Model recommendations should
-              come from Viraj's approved
-              specification matrix rather than
-              an invented rule.
-
-            </div>
-
-          </div>
+          The current HP-to-width mapping
+          is provisional. Replace it with
+          Viraj's approved model/HP/width
+          compatibility matrix before production use.
 
         </div>
 
@@ -1484,7 +2265,9 @@ function recommendationResult() {
 
           <button
             class="btn btn-light"
-            onclick="resetRecommendation()">
+            onclick="
+              resetRecommendation()
+            ">
 
             Start Again
 
@@ -1493,9 +2276,11 @@ function recommendationResult() {
 
           <button
             class="btn btn-primary"
-            onclick="go('features')">
+            onclick="
+              go('product')
+            ">
 
-            Explore Features →
+            Show Product →
 
           </button>
 
@@ -1504,47 +2289,28 @@ function recommendationResult() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
-   SALESMAN
-------------------------------------- */
+/* =========================================================
+   SALESMAN MODE
+========================================================= */
 
 function sales() {
 
-  const steps = [
-
-    "Ask the farmer what problems they face.",
-
-    "Open the matching feature.",
-
-    "Show the same component physically.",
-
-    "Use Compare when required.",
-
-    "Show written guarantee.",
-
-    "Ask tractor HP and soil type.",
-
-    "Confirm working width.",
-
-    "Discuss size and price last."
-
-  ];
-
-
   return shell(
+
     "sales",
 
     "Salesman Mode",
 
-    "A guided conversation for the salesperson.",
+    "A guided sequence for customer conversations.",
 
     `
 
@@ -1553,20 +2319,26 @@ function sales() {
         <div class="hero-copy">
 
           <div class="eyebrow">
-            Guided Selling
+
+            GUIDED SELLING
+
           </div>
 
 
           <h2>
-            Let the tablet carry the long explanation.
+
+            Let the tablet
+            carry the explanation.
+
           </h2>
 
 
-          <p class="hero-description">
+          <p>
 
-            The salesperson can focus on the
-            customer while the application handles
-            the product explanation visually.
+            The salesperson can focus
+            on the customer while the
+            application handles the
+            visual presentation.
 
           </p>
 
@@ -1575,7 +2347,7 @@ function sales() {
 
             <button
               class="btn btn-primary"
-              onclick="go('demo')">
+              onclick="startDemo()">
 
               Launch Customer Demo →
 
@@ -1590,8 +2362,8 @@ function sales() {
 
           <img
             src="assets/VVKL7417.JPG"
-            alt="Viraj SoilTech"
-          />
+            alt="Viraj SoilTech Rotavator"
+          >
 
         </div>
 
@@ -1602,33 +2374,59 @@ function sales() {
 
         <div class="tile-grid">
 
-          ${steps
+          ${[
+            "Ask about the old rotavator.",
+
+            "Open the relevant feature.",
+
+            "Show the physical component.",
+
+            "Use Compare if needed.",
+
+            "Show the written guarantee.",
+
+            "Ask tractor HP and soil.",
+
+            "Confirm working width.",
+
+            "Discuss price last."
+
+          ]
             .map(
               (step, index) => `
 
-                <div class="tile">
+                <article class="tile">
 
-                  <div class="number">
+                  <div
+                    class="tile-number">
+
                     ${index + 1}
+
                   </div>
 
 
                   <span class="tag">
+
                     STEP ${index + 1}
+
                   </span>
 
 
                   <h4>
+
                     ${step}
+
                   </h4>
 
 
                   <p>
-                    Keep the explanation visual
-                    and connected to the machine.
+
+                    Keep the explanation
+                    short and visual.
+
                   </p>
 
-                </div>
+                </article>
 
               `
             )
@@ -1639,141 +2437,73 @@ function sales() {
       </section>
 
 
-      ${contactCard()}
+      ${contactSection()}
 
     `
+
   );
 
 }
 
 
-/* -------------------------------------
-   MODALS
-------------------------------------- */
+/* =========================================================
+   SEARCH
+========================================================= */
 
-function openFeature(id) {
-
-  const feature =
-    DATA.features.find(
-      item => item.id === id
-    );
-
-
-  if (!feature) return;
-
-
-  document.getElementById(
-    "modalBody"
-  ).innerHTML = `
-
-    <span class="tag">
-      ${feature.tag}
-    </span>
-
-
-    <h2 id="modalTitle">
-      ${feature.title}
-    </h2>
-
-
-    <p>
-      ${feature.detail}
-    </p>
-
-
-    <div class="benefits">
-
-      ${feature.benefits
-        .map(
-          benefit =>
-            `<div class="benefit">${benefit}</div>`
-        )
-        .join("")}
-
-    </div>
-
-
-    <div class="actions">
-
-      <button
-        class="btn btn-primary"
-        onclick="
-          closeModal();
-          demoFeatureIndex =
-            ${DATA.features.indexOf(feature)};
-          go('demo');
-        ">
-
-        Use in Customer Demo →
-
-      </button>
-
-
-      <button
-        class="btn btn-soft"
-        onclick="
-          openImage(
-            '${feature.image}',
-            '${feature.title}'
-          );
-        ">
-
-        Open Product Photo
-
-      </button>
-
-    </div>
-
-  `;
-
-
-  showModal();
-
-}
-
-
-function openImage(
-  src,
-  title
+function searchCards(
+  query
 ) {
 
-  document.getElementById(
-    "modalBody"
-  ).innerHTML = `
-
-    <span class="tag">
-      VIRAJ SOILTECH
-    </span>
-
-
-    <h2 id="modalTitle">
-      ${title}
-    </h2>
+  query =
+    (
+      query || ""
+    )
+      .trim()
+      .toLowerCase();
 
 
-    <div class="modal-image">
+  document
+    .querySelectorAll(
+      ".searchable"
+    )
+    .forEach(
+      card => {
 
-      <img
-        src="${src}"
-        alt="${title}"
-      />
-
-    </div>
-
-  `;
+        const text =
+          card.innerText
+            .toLowerCase();
 
 
-  showModal();
+        card.style.display =
+          !query ||
+          text.includes(query)
+
+            ? ""
+
+            : "none";
+
+      }
+    );
 
 }
 
+
+/* =========================================================
+   MODAL
+========================================================= */
 
 function showModal() {
 
   const modal =
-    document.getElementById("modal");
+    document.getElementById(
+      "modal"
+    );
 
-  modal.classList.add("show");
+
+  modal.classList.add(
+    "show"
+  );
+
 
   modal.setAttribute(
     "aria-hidden",
@@ -1786,9 +2516,15 @@ function showModal() {
 function closeModal() {
 
   const modal =
-    document.getElementById("modal");
+    document.getElementById(
+      "modal"
+    );
 
-  modal.classList.remove("show");
+
+  modal.classList.remove(
+    "show"
+  );
+
 
   modal.setAttribute(
     "aria-hidden",
@@ -1798,42 +2534,13 @@ function closeModal() {
 }
 
 
-/* -------------------------------------
-   SEARCH
-------------------------------------- */
-
-function searchCards(query) {
-
-  query =
-    (query || "")
-      .trim()
-      .toLowerCase();
-
-
-  document
-    .querySelectorAll(".searchable")
-    .forEach(card => {
-
-      card.style.display =
-        !query ||
-        card.innerText
-          .toLowerCase()
-          .includes(query)
-
-          ? ""
-
-          : "none";
-
-    });
-
-}
-
-
-/* -------------------------------------
+/* =========================================================
    TOAST
-------------------------------------- */
+========================================================= */
 
-function toast(message) {
+function toast(
+  message
+) {
 
   const element =
     document.getElementById(
@@ -1870,11 +2577,32 @@ function toast(message) {
 }
 
 
-/* -------------------------------------
-   ROUTING
-------------------------------------- */
+/* =========================================================
+   HELPERS
+========================================================= */
 
-const pages = {
+function escapeJs(
+  value
+) {
+
+  return String(value)
+    .replace(
+      /\\/g,
+      "\\\\"
+    )
+    .replace(
+      /'/g,
+      "\\'"
+    );
+
+}
+
+
+/* =========================================================
+   PAGE ROUTER
+========================================================= */
+
+const PAGES = {
 
   home,
 
@@ -1893,12 +2621,16 @@ const pages = {
 };
 
 
-function go(page) {
+function go(
+  page
+) {
 
-  currentPage = page;
+  currentPage =
+    page;
+
 
   const renderer =
-    pages[page] ||
+    PAGES[page] ||
     home;
 
 
@@ -1909,18 +2641,22 @@ function go(page) {
 
 
   window.scrollTo({
+
     top: 0,
+
     behavior: "smooth"
+
   });
 
 }
 
 
-/* -------------------------------------
-   HERO CAROUSEL
-------------------------------------- */
+/* =========================================================
+   HERO AUTO SLIDE
+========================================================= */
 
 setInterval(
+
   () => {
 
     if (
@@ -1933,7 +2669,9 @@ setInterval(
 
 
     heroIndex =
-      (heroIndex + 1) %
+      (
+        heroIndex + 1
+      ) %
       DATA.heroImages.length;
 
 
@@ -1943,7 +2681,11 @@ setInterval(
       );
 
 
-    if (!image) return;
+    if (!image) {
+
+      return;
+
+    }
 
 
     image.style.opacity =
@@ -1951,6 +2693,7 @@ setInterval(
 
 
     setTimeout(
+
       () => {
 
         image.src =
@@ -1964,9 +2707,14 @@ setInterval(
 
 
         document
-          .querySelectorAll(".dot")
+          .querySelectorAll(
+            ".hero-dot"
+          )
           .forEach(
-            (dot, index) => {
+            (
+              dot,
+              index
+            ) => {
 
               dot.classList.toggle(
                 "active",
@@ -1977,20 +2725,26 @@ setInterval(
           );
 
       },
+
       220
+
     );
 
   },
+
   4500
+
 );
 
 
-/* -------------------------------------
-   GLOBAL KEYBOARD
-------------------------------------- */
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
 
 document.addEventListener(
+
   "keydown",
+
   event => {
 
     if (
@@ -2002,9 +2756,12 @@ document.addEventListener(
     }
 
   }
+
 );
 
 
-/* START */
+/* =========================================================
+   START APPLICATION
+========================================================= */
 
 go("home");

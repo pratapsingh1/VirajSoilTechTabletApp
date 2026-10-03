@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
+
+  <meta charset="UTF-8">
 
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
+  >
 
   <meta
     name="theme-color"
-    content="#071f17"
-  />
+    content="#061b13"
+  >
 
-  <title>Viraj SoilTech | Product Advisor</title>
+  <title>
+    Viraj SoilTech • Product Advisor
+  </title>
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
 
 <body>
 
   <div id="app"></div>
+
+
+  <!-- ======================================
+       MODAL
+  ======================================= -->
 
   <div
     id="modal"
     class="modal"
     aria-hidden="true"
   >
-    <div class="modal-backdrop" onclick="closeModal()"></div>
+
+    <div
+      class="modal-backdrop"
+      onclick="closeModal()">
+    </div>
+
 
     <div class="modal-card">
 
@@ -39,12 +55,26 @@
         ×
       </button>
 
-      <div id="modalContent"></div>
+
+      <div id="modalBody"></div>
 
     </div>
+
   </div>
+
+
+  <!-- ======================================
+       TOAST
+  ======================================= -->
+
+  <div
+    id="toast"
+    class="toast">
+  </div>
+
 
   <script src="app.js"></script>
 
 </body>
+
 </html>
